@@ -1,4 +1,4 @@
-#N canvas 783 252 1094 506 12;
+#N canvas 783 252 702 600 12;
 #X symbolatom 174 33 30 0 0 0 snare-drag snare-drag-set snare-drag
 , f 30;
 #X symbolatom 173 59 30 0 0 0 maracas-dbl maracas-dbl-set maracas-dbl
@@ -24,8 +24,8 @@ flute-C-octave1, f 30;
 , f 30;
 #X text 170 151 Woodwind & Horns;
 #X obj 446 32 setctl snare-drag;
-#X obj 252 427 text sequence voicesLib -g;
-#X msg 257 382 line 0 \, auto;
+#X obj 202 496 text sequence voicesLib -g;
+#X msg 202 470 line 0 \, auto;
 #X obj 448 172 setctl clarinet-C;
 #X obj 447 56 setctl maracas-dbl;
 #X obj 447 82 setctl hihat-lick;
@@ -36,15 +36,14 @@ flute-C-octave1, f 30;
 #X obj 449 275 setctl sax-bari-lick;
 #X obj 450 299 setctl sax-tenor-lick;
 #X obj 451 325 setctl sax-alto-C;
-#X obj 18 431 text define -k voicesLib;
-#A set snare-drag symbol ./Percussion/drum-snare-drag.wav \; maracas-dbl
-symbol ./Percussion/maracas-dbl.wav \; hihat-lick symbol ./Percussion/cymbal-hihat-lick.wav
-\; drum-surdo-large-lick symbol ./Percussion/drum-surdo-large-lick.wav
-\; \; clarinet-C symbol ./Instruments/clarinet-C-octave0.wav \; flute-alto-C-vib
-symbol ./Instruments/flute-alto-C-vib.wav \; flugel-lick symbol ./Instruments/flugel-lick.wav
-\; flute-C-octave1 symbol ./Instruments/flute-C-octave1.wav \; sax-bari-lick
-symbol ./Instruments/sax-bari-lick.wav \; sax-tenor-lick symbol ./Instruments/sax-tenor-lick.wav
-\; sax-alto-C symbol ./Instruments/sax-alto-C.wav \;;
-#X msg 16 385 read VoicesLib.txt;
+#X msg 18 399 read VoicesLib.txt;
+#X obj 18 367 loadbang;
+#X obj 18 431 text define voicesLib;
+#X msg 202 411 bang;
+#X obj 203 387 del 20;
 #X connect 15 0 14 0;
+#X connect 26 0 28 0;
 #X connect 27 0 26 0;
+#X connect 27 0 30 0;
+#X connect 29 0 15 0;
+#X connect 30 0 29 0;

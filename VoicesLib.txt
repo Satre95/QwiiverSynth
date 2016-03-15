@@ -10,3 +10,5 @@ flute-C-octave1 symbol ./Instruments/flute-C-octave1.wav;
 sax-bari-lick symbol ./Instruments/sax-bari-lick.wav;
 sax-tenor-lick symbol ./Instruments/sax-tenor-lick.wav;
 sax-alto-C symbol ./Instruments/sax-alto-C.wav;
+;
+voiceCount 11;
