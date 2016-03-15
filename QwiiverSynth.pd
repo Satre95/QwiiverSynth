@@ -1,0 +1,25 @@
+#N canvas 0 22 852 434 10;
+#X text 23 17 Qwiivwer Synthesizer;
+#X obj 25 49 OSCReceiveWiimote;
+#X floatatom 25 96 5 0 0 0 - voice-index-set -, f 5;
+#X text 66 96 Current Voice Index;
+#X floatatom 26 128 5 0 0 0 - ModIndex -, f 5;
+#X floatatom 27 156 5 0 0 0 - Offset -, f 5;
+#X floatatom 26 188 5 0 0 0 - PitchShift -, f 5;
+#X floatatom 25 217 5 0 0 0 - Feedback -, f 5;
+#X text 64 127 Modulation Index;
+#X text 67 156 Offset;
+#X text 65 189 Triad Pitch Shift;
+#X text 65 218 Feedback;
+#X text 195 149 The number boxes display the values as they are for
+the currently selected voice.;
+#X text 23 252 Controls:;
+#X text 24 279 Use the left and right arrow keys to change the voice
+index and to select a voice.;
+#X text 24 312 Use the Home button to play/pause the current voice.
+;
+#X text 24 372 While holding down B \, the Pitch and Yaw of the wii
+remote can be used to change the Feedback and the Triad Pitch Shift
+\, respectively., f 59;
+#X text 24 335 Use the Up and Down arrow keys to change the delay between
+plays of the currently selected voice., f 59;
