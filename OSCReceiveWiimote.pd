@@ -91,6 +91,7 @@
 #X obj 426 237 output~;
 #X floatatom 670 70 5 0 0 0 Voice_Index voice-index-set -, f 5;
 #X obj 443 107 VoiceSelector;
+#X obj 474 159 VolumeProcessor;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 2 0 5 0;
