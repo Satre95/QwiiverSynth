@@ -1,4 +1,4 @@
-#N canvas 783 252 702 600 12;
+#N canvas 393 391 1137 595 12;
 #X symbolatom 174 33 30 0 0 0 snare-drag snare-drag-set snare-drag
 , f 30;
 #X symbolatom 173 59 30 0 0 0 maracas-dbl maracas-dbl-set maracas-dbl
