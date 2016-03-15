@@ -2,7 +2,6 @@ snare-drag symbol ./Percussion/drum-snare-drag.wav;
 maracas-dbl symbol ./Percussion/maracas-dbl.wav;
 hihat-lick symbol ./Percussion/cymbal-hihat-lick.wav;
 drum-surdo-large-lick symbol ./Percussion/drum-surdo-large-lick.wav;
-;
 clarinet-C symbol ./Instruments/clarinet-C-octave0.wav;
 flute-alto-C-vib symbol ./Instruments/flute-alto-C-vib.wav;
 flugel-lick symbol ./Instruments/flugel-lick.wav;
