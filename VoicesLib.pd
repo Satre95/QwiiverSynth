@@ -1,0 +1,50 @@
+#N canvas 783 252 1094 506 12;
+#X symbolatom 174 33 30 0 0 0 snare-drag snare-drag-set snare-drag
+, f 30;
+#X symbolatom 173 59 30 0 0 0 maracas-dbl maracas-dbl-set maracas-dbl
+, f 30;
+#X symbolatom 173 88 30 0 0 0 hihat-lick hihat-lick-set hihat-lick
+, f 30;
+#X symbolatom 175 111 30 0 0 0 drum-surdo-large-lick drum-surdo-large-lick-set
+drum-surdo-large-lick, f 30;
+#X symbolatom 173 172 30 0 0 0 clarinet-C clarinet-C-set clarinet-C
+, f 30;
+#X symbolatom 172 197 30 0 0 0 flute-alto-C-vib flute-alto-C-vib-set
+flute-alto-C-vib, f 30;
+#X symbolatom 173 223 30 0 0 0 flugel-lick flugel-lick-set flugel-lick
+, f 30;
+#X text 170 13 Percussion;
+#X symbolatom 172 251 30 0 0 0 flute-C-octave1 flute-C-octave1-set
+flute-C-octave1, f 30;
+#X symbolatom 172 277 30 0 0 0 sax-bari-lick sax-bari-lick-set sax-bari-lick
+, f 30;
+#X symbolatom 171 303 30 0 0 0 sax-tenor-lick sax-tenor-lick-set sax-tenor-lick
+, f 30;
+#X symbolatom 172 329 30 0 0 0 sax-alto-C sax-alto-C-set sax-alto-C
+, f 30;
+#X text 170 151 Woodwind & Horns;
+#X obj 446 32 setctl snare-drag;
+#X obj 252 427 text sequence voicesLib -g;
+#X msg 257 382 line 0 \, auto;
+#X obj 448 172 setctl clarinet-C;
+#X obj 447 56 setctl maracas-dbl;
+#X obj 447 82 setctl hihat-lick;
+#X obj 447 108 setctl drum-surdo-large-lick;
+#X obj 449 196 setctl flute-alto-C-vib;
+#X obj 449 222 setctl flugel-lick;
+#X obj 449 248 setctl flute-C-octave1;
+#X obj 449 275 setctl sax-bari-lick;
+#X obj 450 299 setctl sax-tenor-lick;
+#X obj 451 325 setctl sax-alto-C;
+#X obj 18 431 text define -k voicesLib;
+#A set snare-drag symbol ./Percussion/drum-snare-drag.wav \; maracas-dbl
+symbol ./Percussion/maracas-dbl.wav \; hihat-lick symbol ./Percussion/cymbal-hihat-lick.wav
+\; drum-surdo-large-lick symbol ./Percussion/drum-surdo-large-lick.wav
+\; \; clarinet-C symbol ./Instruments/clarinet-C-octave0.wav \; flute-alto-C-vib
+symbol ./Instruments/flute-alto-C-vib.wav \; flugel-lick symbol ./Instruments/flugel-lick.wav
+\; flute-C-octave1 symbol ./Instruments/flute-C-octave1.wav \; sax-bari-lick
+symbol ./Instruments/sax-bari-lick.wav \; sax-tenor-lick symbol ./Instruments/sax-tenor-lick.wav
+\; sax-alto-C symbol ./Instruments/sax-alto-C.wav \;;
+#X msg 16 385 read VoicesLib.txt;
+#X connect 15 0 14 0;
+#X connect 27 0 26 0;
