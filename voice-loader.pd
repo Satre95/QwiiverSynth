@@ -34,8 +34,10 @@
 #X obj 967 327 inlet;
 #X obj 292 112 symbol;
 #X obj 292 154 sel - +;
-#X obj 506 237 + 50;
-#X obj 150 225 - 50;
+#X obj 506 237 + 100;
+#X obj 150 225 - 100;
+#X text 377 297 delay ± values are currently hardcoded. Change later
+so that user can modify dynamically.;
 #X connect 1 0 15 0;
 #X connect 2 0 3 0;
 #X connect 3 0 0 0;
